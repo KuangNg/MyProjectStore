@@ -1,0 +1,33 @@
+<!--pages/pay/pay.wxml-->
+<view class='pay_add'>
+    <image src='../../image/icon-dw.png' class='dingwei'></image>
+    <view class='address_info'>
+        <text>lala 187367327482</text>
+        <text>广东省天河区天河儿童公园珠吉路60号</text>
+    </view>
+    <image src='../../image/icon-arrow.png' class='rightj'></image>
+</view>
+
+<view class='table'>
+    <view class='tr header clearfix'>
+        <view class='td td_goods'>商品</view>
+        <view class='td'>数量</view>
+        <view class='td'>价格</view>
+    </view>
+    <view class='tr clearfix' wx:for="{{goodsList}}" wx:key="*this">
+        <view class='td td_goods'>{{item.goodsName}}</view>
+        <view class='td'>{{item.num}}</view>
+        <view class='td'>￥{{item.goodsPrice}}</view>
+    </view>
+</view>
+
+<view class="remarks">
+    <input placeholder='填写备注' />
+</view>
+
+<!-- 底部 -->
+<view class='btn_footer'>
+    <text>总价</text>
+    <text class='pricep'>￥{{total}}</text>
+    <text class='play' bindtap='getPlay'>立即支付</text>
+</view>

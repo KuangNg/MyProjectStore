@@ -1,0 +1,45 @@
+/* pages/my/my.wxss */
+.my_top{
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    margin-bottom:10px; 
+}
+.my_top .img{
+    width: 80px;
+    height: 80px;
+    margin: 0px auto;
+    padding: 20px;
+}
+.my_top .img image{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.my_name{
+    font-size: 14px;
+    color: #979797;
+    padding-bottom: 20px;
+}
+
+.lists{
+    background: #fff;
+}
+.lists .li{
+    height: 45px;
+    width: 100%;
+    line-height: 45px;
+    padding: 0 10px;
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+}
+.lists .li text{
+    font-size: 14px;
+}
+.lists .li image{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 35px;
+    top: 18px;
+}

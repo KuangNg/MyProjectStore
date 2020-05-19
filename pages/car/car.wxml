@@ -1,0 +1,25 @@
+<!--pages/car/car.wxml-->
+<view class='goodslist clearfix' wx:for="{{goodslists}}" wx:key="*this">
+    <view class='left'>
+        <image src='{{item.goodsImage}}'></image>
+    </view>
+    <view class='right'>
+        <view class='goodsName'><text>{{item.goodsName}}</text></view>
+        <view class='goodsPrice'><text>￥{{item.goodsPrice}}</text></view>
+        <view class='btn'>
+            <text class='jian' bindtap='carrReduce' data-index="{{index}}">-</text>
+            <text class='car_num'>{{item.num}}</text>
+            <text class='jia' bindtap='carAdd' data-index='{{index}}'>+</text>
+        </view>
+        <view class='car'>
+            <image src='../../image/shanchu.png' bindtap='carDel' data-index='{{index}}'></image>
+        </view>
+    </view>
+</view>
+
+<!-- 底部 -->
+<view class='btn_footer'>
+    <text>总价</text>
+    <text class='pricep'>￥{{total}}</text>
+    <text class='play' bindtap='getPlay'>下单</text>
+</view>

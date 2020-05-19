@@ -1,0 +1,77 @@
+.categrop{
+  padding: 10px 0;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+.categrop .ul{
+  width: 25%;
+  color: #979797;
+  float: left;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.categrop .ul .li image{
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+}
+.categrop .ul .li text{
+  width: 40px;
+  height: 40px;
+  font-size: 12px;
+}
+
+/* 列表 */
+.fav{
+    padding: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #CDCDCD;
+    background: #fff; 
+}
+/* 商品列表 */
+.goodslist{
+    height: 100px;
+    background-color: #fff;
+    padding-left: 100px;
+    position: relative;
+}
+.goodslist .left{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.goodslist .left image{
+    width: 80px;
+    height: 80px;
+}
+.goodslist .right{
+    margin: 10px 0;
+    float: left;
+    height: 80px;
+}
+.goodslist .right .goodsName{
+    font-size: 14px;
+}
+.goodslist .right .goodsAddress{
+    color: #949494;
+    font-size: 12px;
+}
+.goodslist .right .goodsPrice{
+    font-size: 14px;
+    color: #FF1794;
+    width: 100%;
+    line-height: 22px;
+    height: 22px;
+}
+.car{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+.car image{
+    width: 20px;
+    height: 20px;
+}
+/* 商品列表end */
+/* 列表end */

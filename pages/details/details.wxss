@@ -1,0 +1,128 @@
+/* pages/details/details.wxss */
+/* 商品详情 */
+
+.goods_info{
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.goods_info .goods_title{
+    font-size: 14px;
+    color: #535353;
+    padding: 10px 80px 10px 10px;
+    position: relative;
+}
+.goods_info .goods_title .collect{
+    width: 70px;
+    height: 40px;
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    border-left: 1px solid #e5e5e5;
+}
+.goods_info .goods_title .collect image{
+    width: 24px;
+    height: 24px;
+}
+.goods_info .goods_title .collect text{
+    width: 100%;
+    display: block;
+} 
+.goods_price{
+    padding: 10px;
+    font-size: 16px;
+    color: #ff0000;
+}
+.goods_price .oldprice{
+    font-size: 12px;
+    color: #535353;
+    margin-left: 10px;
+    text-decoration: line-through;
+}
+.goods_de{
+    padding: 10px;
+    background: #fff;
+    font-size: 11px;
+    color: #676767;
+    border-top: 1px solid #e5e5e5;
+}
+/* 商品详情end */
+
+/* 商品内容 */
+.goods_content{
+    background: #fff;
+    padding: 10px;
+    position: relative;
+}
+.goods_content image{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.goods_content text{
+    margin-left: 50px;
+    font-size: 12px;
+    display: block;
+}
+.goods_detail{
+    background: #fff;
+    padding: 10px 0;
+    margin-bottom: 50px;
+}
+/* 商品内容end */
+/* 底部 */
+.goods_footer{
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    z-index: 999;
+}
+.goods_footer .ul{
+    color: #fff;
+}
+.goods_footer .ul .li{
+    width: 25%;
+    height: 50px;
+    font-size: 12px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+}
+.goods_footer .ul .li .icar{
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+    margin-top: 8px;
+    position: relative;
+}
+.goods_footer .ul .li .icar image{
+    width: 25px;
+    height: 25px;
+}
+.goods_footer .ul .li .icar .num{
+    position: absolute;
+    top: 5px;
+    right: -5px;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    border-radius: 50%;
+    background: red;
+    color: #fff;
+    font-size: 10px;
+}
+.goods_footer .ul .li.n1{
+    background: #FFA500;
+}
+.goods_footer .ul .li.n2{
+    background: #00AAEF
+}
+.goods_footer .ul .li.n3{
+    background: #69C3AA
+}
+/* 底部end */

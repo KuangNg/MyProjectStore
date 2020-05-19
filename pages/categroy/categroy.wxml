@@ -1,0 +1,21 @@
+<!--pages/categroy/categroy.wxml-->
+<view class='category'>
+    <view class='left' style='height:{{scrollH}}px'>
+        <scroll-view scroll-y="true" style="height: {{scrollH}}px;">
+          <view wx:for="{{categoryArr}}" wx:key="*this" bindtap='itemName' data-index="{{index}}" class="scroll-view-item {{index==num?'con':''}}">{{item.iconText}}</view>
+        </scroll-view>
+    </view>
+
+    <view class='right'>
+        <view class='datalists' style='min-height:{{scrollH}}px;width:{{Wwidth}}px'>
+            <view class='ul clearfix'>
+                <view class='li'>
+                    <navigator url="/pages/details/details" hover-class="none">
+                        <image src='{{categoryArr[num].iconUrl}}'></image>
+                        <text>{{categoryArr[num].iconText}}</text>
+                    </navigator>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
